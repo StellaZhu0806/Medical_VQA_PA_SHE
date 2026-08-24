@@ -1,0 +1,46 @@
+# Virtual environments and installers
+.venv/
+venv/
+Miniconda3-*.sh
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter temporary/executed files
+.ipynb_checkpoints/
+*_executed_*.ipynb
+
+# Datasets and WSI features
+**/data/
+*.pt
+*.pth
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Model checkpoints and caches
+**/checkpoints*/
+**/pa_she_cache*/
+**/.cache/
+**/hf_cache/
+*.bin
+*.safetensors
+
+# Slurm output
+*.out
+*.err
+slurm-*
+
+# Experiment logging
+wandb/
+runs/
+
+# Secrets
+.env
+*.pem
+
+# macOS
+.DS_Store
