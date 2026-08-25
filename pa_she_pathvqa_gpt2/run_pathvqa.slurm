@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-#SBATCH --job-name=radvqa_joint_se
+#SBATCH --job-name=pa_she_pathvqa_gpt2
 #SBATCH --partition=gpuL
 #SBATCH --gpus=1
 #SBATCH --nodes=1
@@ -8,16 +8,16 @@
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=125G
 #SBATCH --time=1-00:00:00
-#SBATCH --output=vqarad_joint_se_%j.out
-#SBATCH --error=vqarad_joint_se_%j.err
+#SBATCH --output=pa_she_pathvqa_gpt2_%j.out
+#SBATCH --error=pa_she_pathvqa_gpt2_%j.err
 
 set -euo pipefail
 
 # --- Project paths -----------------------------------------------------------
-readonly PROJECT_DIR="${HOME}/dissertation_2026/joint_se_vqarad"
+readonly PROJECT_DIR="${HOME}/dissertation_2026/pa_she_pathvqa_gpt2"
 readonly VENV_DIR="${HOME}/dissertation_2026/.venv"
-readonly NOTEBOOK_NAME="VQARAD_GPT_LoRA_Joint_SE.ipynb"
-readonly EXECUTED_NAME="VQARAD_GPT_LoRA_Joint_SE_executed_${SLURM_JOB_ID}.ipynb"
+readonly NOTEBOOK_NAME="PathVQA_GPT_LoRA_PA_SHE.ipynb"
+readonly EXECUTED_NAME="PathVQA_GPT_LoRA_PA_SHE_executed_${SLURM_JOB_ID}.ipynb"
 
 # --- CSF3 software environment ----------------------------------------------
 module purge
@@ -30,8 +30,6 @@ cd "${PROJECT_DIR}"
 export MPLBACKEND=Agg
 export TOKENIZERS_PARALLELISM=false
 export PYTHONUNBUFFERED=1
-
-export REUSE_TRAINED_CHECKPOINT=1
 
 # --- Job diagnostics ---------------------------------------------------------
 echo "======================================================================"

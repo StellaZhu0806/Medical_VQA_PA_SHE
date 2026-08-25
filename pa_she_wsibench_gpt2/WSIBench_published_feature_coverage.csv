@@ -1,0 +1,4 @@
+annotation_source,annotated_questions,retained_questions,dropped_questions,question_coverage_pct,annotated_slides,retained_slides,dropped_slides
+train annotations,177171,6717,170454,3.791252518753069,9836,406,9430
+open-test annotations,2838,2838,0,100.0,527,527,0
+closed-test annotations,1281,1111,170,86.72911787665886,392,223,169
