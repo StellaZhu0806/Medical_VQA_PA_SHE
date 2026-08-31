@@ -31,6 +31,9 @@ export MPLBACKEND=Agg
 export TOKENIZERS_PARALLELISM=false
 export PYTHONUNBUFFERED=1
 
+export VQAMED2019_ROOT="$PROJECT_DIR/data/VQA-Med-2019"
+export VQAMED2019_AUTO_DOWNLOAD="${VQAMED2019_AUTO_DOWNLOAD:-1}"
+
 # --- Job diagnostics ---------------------------------------------------------
 echo "======================================================================"
 echo "Started: $(date)"

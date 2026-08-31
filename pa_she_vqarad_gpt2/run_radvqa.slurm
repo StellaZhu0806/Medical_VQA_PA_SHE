@@ -16,8 +16,8 @@ set -euo pipefail
 # --- Project paths -----------------------------------------------------------
 readonly PROJECT_DIR="${HOME}/dissertation_2026/pa_she_vqarad_gpt2"
 readonly VENV_DIR="${HOME}/dissertation_2026/.venv"
-readonly NOTEBOOK_NAME="VQARAD_GPT_LoRA_Joint_SE.ipynb"
-readonly EXECUTED_NAME="VQARAD_GPT_LoRA_Joint_SE_executed_${SLURM_JOB_ID}.ipynb"
+readonly NOTEBOOK_NAME="VQARAD_GPT_LoRA_PA_SHE.ipynb"
+readonly EXECUTED_NAME="VQARAD_GPT_LoRA_PA_SHE_executed_${SLURM_JOB_ID}.ipynb"
 
 # --- CSF3 software environment ----------------------------------------------
 module purge
